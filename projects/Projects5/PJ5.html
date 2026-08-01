@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Proyek - Sistem Pemantauan Postur Duduk Cerdas</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-950 min-h-screen py-10 px-6">
+
+    <div class="max-w-4xl mx-auto space-y-10">
+        
+        <!-- Tombol Kembali -->
+        <div>
+            <a href="index.html#projects" class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold transition-all group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition-transform"></i> Kembali ke Portofolio
+            </a>
+        </div>
+
+        <!-- Header Proyek -->
+        <header class="space-y-4">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold tracking-wide uppercase">
+                IoT & Machine Learning
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight">
+                Sistem Pemantauan Postur Duduk Cerdas
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl leading-relaxed">
+                Rancang bangun deteksi postur dan durasi duduk untuk menjaga kesehatan tulang belakang serta produktivitas pekerja usia produktif secara real-time.
+            </p>
+            
+            <!-- Tech Stack Badges -->
+            <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-xs bg-slate-900 text-emerald-400 border border-slate-700/80 px-3 py-1.5 rounded-lg font-mono">ESP32</span>
+                <span class="text-xs bg-slate-900 text-emerald-400 border border-slate-700/80 px-3 py-1.5 rounded-lg font-mono">Random Forest</span>
+                <span class="text-xs bg-slate-900 text-emerald-400 border border-slate-700/80 px-3 py-1.5 rounded-lg font-mono">Python</span>
+                <span class="text-xs bg-slate-900 text-emerald-400 border border-slate-700/80 px-3 py-1.5 rounded-lg font-mono">Firebase Realtime DB</span>
+            </div>
+        </header>
+
+        <!-- Placeholder Banner/Gambar Proyek -->
+        <div class="glass-card rounded-3xl overflow-hidden p-2">
+            <img src="https://via.placeholder.com/1200x600?text=Dokumentasi+Perangkat+%26+Sistem+Postur" alt="Sistem Postur Duduk" class="w-full h-auto rounded-2xl object-cover">
+        </div>
+
+        <!-- Konten Detail Proyek -->
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Kolom Utama (Deskripsi & Fitur) -->
+            <div class="md:col-span-2 space-y-8">
+                
+                <!-- Ringkasan Proyek -->
+                <section class="space-y-3">
+                    <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                        <i data-lucide="file-text" class="text-emerald-400"></i> Deskripsi Proyek
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                        Duduk terlalu lama dengan posisi tubuh yang buruk dapat menyebabkan gangguan kesehatan tulang belakang (*musculoskeletal disorders*). Proyek ini dirancang untuk memantau posisi duduk seseorang secara real-time menggunakan jaringan sensor terintegrasi dengan mikrokontroler ESP32. Data posisi diolah dengan algoritma Machine Learning untuk mendeteksi kebiasaan duduk tidak sehat dan memberikan peringatan otomatis.
+                    </p>
+                </section>
+
+                <!-- Fitur Utama -->
+                <section class="space-y-3">
+                    <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                        <i data-lucide="check-circle-2" class="text-emerald-400"></i> Fitur Utama
+                    </h2>
+                    <ul class="space-y-2 text-slate-300 text-sm md:text-base list-disc list-inside">
+                        <li><strong class="text-white">Klasifikasi Postur Real-time:</strong> Membedakan posisi duduk ideal, membungkuk, miring kanan/kiri.</li>
+                        <li><strong class="text-white">Pelacakan Durasi Duduk:</strong> Peringatan otomatis jika pengguna duduk tanpa jeda melebihi ambang batas aman.</li>
+                        <li><strong class="text-white">Akurasi Tinggi:</strong> Klasifikasi berbasis Machine Learning (Random Forest) untuk presisi deteksi.</li>
+                        <li><strong class="text-white">Integrasi Cloud:</strong> Penyimpanan log data kesehatan duduk secara terpusat di Google Firebase.</li>
+                    </ul>
+                </section>
+
+                <!-- Arsitektur Sistem -->
+                <section class="space-y-3">
+                    <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                        <i data-lucide="cpu" class="text-emerald-400"></i> Spesifikasi Teknis
+                    </h2>
+                    <div class="glass-card p-4 rounded-xl space-y-2 text-sm text-slate-300">
+                        <p><strong>Mikrokontroler:</strong> ESP32 (Wi-Fi & Bluetooth Dual Core)</p>
+                        <p><strong>Algoritma AI:</strong> Random Forest Classifier</p>
+                        <p><strong>Database:</strong> Firebase Realtime Database</p>
+                        <p><strong>Bahasa Pemrograman:</strong> C++ (Arduino IDE) & Python (Data Analysis/Training)</p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Sidebar Informasi / Quick Info -->
+            <div class="space-y-6">
+                <div class="glass-card p-6 rounded-2xl space-y-4">
+                    <h3 class="text-lg font-bold text-white">Informasi Proyek</h3>
+                    <hr class="border-slate-800">
+                    
+                    <div>
+                        <span class="text-xs text-slate-500 uppercase tracking-wider block">Kategori</span>
+                        <span class="text-sm font-medium text-slate-200">Tugas Akhir / IoT Research</span>
+                    </div>
+
+                    <div>
+                        <span class="text-xs text-slate-500 uppercase tracking-wider block">Peran</span>
+                        <span class="text-sm font-medium text-slate-200">Hardware & Algorithm Engineer</span>
+                    </div>
+
+                    <div>
+                        <span class="text-xs text-slate-500 uppercase tracking-wider block">Status</span>
+                        <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20 inline-block mt-1">Selesai / Active</span>
+                    </div>
+
+                    <hr class="border-slate-800 pt-2">
+
+                    <!-- Tautan Repositori / Demo jika ada -->
+                    <a href="https://github.com" target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2 text-sm shadow-lg shadow-emerald-500/10">
+                        <i data-lucide="github" class="w-4 h-4"></i> Repository Kode
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="pt-10 border-t border-slate-800 text-center text-xs text-slate-500">
+            © 2026 Portofolio Detail Proyek.
+        </footer>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
