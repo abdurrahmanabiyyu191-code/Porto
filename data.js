@@ -108,8 +108,21 @@ contact: {
     email: "abdurrahmanabiyyu191@gmail.com",
     location: "Indonesia",
     socials: [
-        { name: "LinkedIn", url: "https://linkedin.com", icon: "https://cdn-icons-png.flaticon.com/512/174/174857.png" },
-        { name: "GitHub", url: "https://github.com", icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png" },
-        { name: "Instagram", url: "https://www.instagram.com/abiyyuabdurrahman/", icon: "4.png" }
+        {
+            name: "LinkedIn",
+            url: "https://linkedin.com",
+            icon: "https://cdn-icons-png.flaticon.com/512/174/174857.png"
+        },
+        {
+            name: "GitHub",
+            url: "https://github.com",
+            icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        },
+        {
+            name: "Instagram",
+            url: "https://www.instagram.com/abiyyuabdurrahman/",
+            icon: "4.png"
+        }
     ]
 }
+};
