@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Profesional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Animated Background Grid Pattern */
+        .bg-grid-pattern {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 5px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 3px);
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 40px 40px; }
+        }
+
+        /* Glassmorphism Effect */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(52, 211, 153, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased bg-grid-pattern selection:bg-emerald-500 selection:text-slate-950">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md z-50 border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="#" class="text-lg font-bold tracking-wider text-emerald-400" id="nav-logo">PORTOFOLIO</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">Tentang</a>
+                <a href="#experience" class="hover:text-emerald-400 transition-colors">Pengalaman</a>
+                <a href="#projects" class="hover:text-emerald-400 transition-colors">Proyek</a>
+                <a href="#awards" class="hover:text-emerald-400 transition-colors">Penghargaan</a>
+                <a href="#contact" class="hover:text-emerald-400 transition-colors">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. TENTANG SAYA & FOTO -->
+    <section id="about" class="min-h-screen flex items-center pt-24 pb-16 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold tracking-wide">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> AVAILABLE FOR WORK
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight" id="hero-name">
+                    Loading...
+                </h1>
+                <p class="text-lg md:text-xl text-emerald-400 font-medium" id="hero-role"></p>
+                <p class="text-slate-400 leading-relaxed text-base md:text-lg" id="hero-about"></p>
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-3 rounded-xl font-semibold transition-all shadow-lg shadow-emerald-500/20 flex items-center gap-2">
+                        Hubungi Saya <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img id="hero-photo" src="" alt="Profile Photo" class="relative rounded-3xl w-72 h-72 md:w-80 md:h-80 object-cover border-2 border-slate-700/80 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. PENGALAMAN KERJA -->
+    <section id="experience" class="py-20 border-t border-slate-800/60 bg-slate-900/30">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 flex items-center gap-3 text-white">
+                <i data-lucide="briefcase" class="text-emerald-400"></i> Pengalaman Kerja
+            </h2>
+            <div id="experience-list" class="space-y-6">
+                <!-- Injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PROYEK SAYA -->
+    <section id="projects" class="py-20 border-t border-slate-800/60">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold flex items-center gap-3 text-white">
+                        <i data-lucide="folder-code" class="text-emerald-400"></i> Proyek Pilihan
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-2">Kumpulan karya dan sistem yang telah dikembangkan.</p>
+                </div>
+            </div>
+            <div id="projects-grid" class="grid md:grid-cols-2 gap-6">
+                <!-- Injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PENGHARGAAN -->
+    <section id="awards" class="py-20 border-t border-slate-800/60 bg-slate-900/30">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 flex items-center gap-3 text-white">
+                <i data-lucide="award" class="text-emerald-400"></i> Penghargaan & Sertifikasi
+            </h2>
+            <div id="awards-list" class="grid md:grid-cols-2 gap-6">
+                <!-- Injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. KONTAK & MEDSOS -->
+    <section id="contact" class="py-24 border-t border-slate-800/60">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white">Mari Terhubung</h2>
+            <p class="text-slate-400 max-w-xl mx-auto">
+                Terbuka untuk kolaborasi proyek, diskusi teknis, maupun peluang karir menarik.
+            </p>
+            <div class="pt-2">
+                <a id="contact-email" href="" class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-8 py-4 rounded-xl font-bold transition-all shadow-xl shadow-emerald-500/20 text-lg">
+                    <i data-lucide="mail"></i> Kirim Email
+                </a>
+            </div>
+            <div id="socials-container" class="flex justify-center gap-4 pt-6">
+                <!-- Injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        © 2026 Designed for Excellence.
+    </footer>
+
+    <!-- Load Data & Scripts -->
+    <script src="data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Render Profile
+            document.getElementById('hero-name').innerText = portfolioData.profile.name;
+            document.getElementById('hero-role').innerText = portfolioData.profile.role;
+            document.getElementById('hero-about').innerText = portfolioData.profile.about;
+            document.getElementById('hero-photo').src = portfolioData.profile.photoUrl;
+
+            // 2. Render Experiences
+            const expContainer = document.getElementById('experience-list');
+            portfolioData.experiences.forEach(exp => {
+                expContainer.innerHTML += `
+                    <div class="glass-card p-6 rounded-2xl flex flex-col md:flex-row gap-6 items-start transition-all">
+                        <img src="${exp.logoUrl}" alt="${exp.company}" class="w-14 h-14 rounded-xl object-cover bg-slate-800 border border-slate-700">
+                        <div class="space-y-1 flex-1">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
+                                <h3 class="text-xl font-bold text-white">${exp.title}</h3>
+                                <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full w-fit">${exp.period}</span>
+                            </div>
+                            <p class="text-slate-400 font-medium text-sm">${exp.company}</p>
+                            <p class="text-slate-400 text-sm pt-2 leading-relaxed">${exp.description}</p>
+                        </div>
+                    </div>
+                `;
+            });
+
+     // 3. Render Projects (Desain Elegan dengan Thumbnail Preview)
+            const projContainer = document.getElementById('projects-grid');
+            portfolioData.projects.forEach(proj => {
+                const techBadges = proj.techStack.map(tech => 
+                    `<span class="text-xs bg-slate-900/80 text-emerald-400 border border-slate-700/80 px-2.5 py-1 rounded-lg font-mono">${tech}</span>`
+                ).join(' ');
+
+                // Jika imageUrl ada, tampilkan gambar; jika tidak, lewati bagian gambar
+                const imageSection = proj.imageUrl ? `
+                    <div class="relative h-52 w-full overflow-hidden bg-slate-900 border-b border-slate-800/80">
+                        <img src="${proj.imageUrl}" alt="${proj.title}" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
+                        <span class="absolute top-4 left-4 text-[10px] font-semibold uppercase tracking-wider text-emerald-400 bg-slate-950/80 border border-emerald-500/30 px-3 py-1 rounded-full backdrop-blur-md">
+                            ${proj.category}
+                        </span>
+                    </div>
+                ` : '';
+
+                projContainer.innerHTML += `
+                    <a href="${proj.link}" ${proj.link.startsWith('http') ? 'target="_blank"' : ''} class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/50 block group cursor-pointer">
+                        <div>
+                            ${imageSection}
+                            <div class="p-6 space-y-3">
+                                ${!proj.imageUrl ? `<span class="text-xs font-semibold uppercase tracking-wider text-slate-500">${proj.category}</span>` : ''}
+                                <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors flex items-center justify-between gap-2">
+                                    <span class="leading-snug">${proj.title}</span>
+                                    <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-500 group-hover:text-emerald-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all flex-shrink-0"></i>
+                                </h3>
+                                <p class="text-slate-400 text-sm leading-relaxed">${proj.description}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6 pt-0 space-y-4">
+                            <div class="flex flex-wrap gap-2">${techBadges}</div>
+                            <span class="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 group-hover:translate-x-1 transition-transform">
+                                Lihat Detail Proyek <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                    </a>
+                `;
+            });
+
+    // 4. Render Awards (Desain Elegan dengan Gambar Preview)
+            const awardContainer = document.getElementById('awards-list');
+            portfolioData.awards.forEach(award => {
+                const hasLink = award.link && award.link.trim() !== "" && award.link !== "#";
+                const wrapperTag = hasLink ? 'a' : 'div';
+                const linkAttrs = hasLink 
+                    ? `href="${award.link}" ${award.link.startsWith('http') ? 'target="_blank"' : ''} class="glass-card rounded-2xl overflow-hidden block transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/50 group cursor-pointer flex flex-col justify-between"` 
+                    : `class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group"`;
+
+                // Jika imageUrl ada, tampilkan gambar; jika tidak, berikan placeholder/efek visual
+                const imageSection = award.imageUrl ? `
+                    <div class="relative h-48 w-full overflow-hidden bg-slate-900 border-b border-slate-800/80">
+                        <img src="${award.imageUrl}" alt="${award.title}" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                    </div>
+                ` : '';
+
+                awardContainer.innerHTML += `
+                    <${wrapperTag} ${linkAttrs}>
+                        ${imageSection}
+                        <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                            <div class="space-y-2">
+                                <div class="flex justify-between items-start gap-2">
+                                    <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors leading-snug">${award.title}</h3>
+                                    <span class="text-xs text-slate-400 font-mono bg-slate-900/80 px-2.5 py-1 rounded-md border border-slate-800 flex-shrink-0">${award.year}</span>
+                                </div>
+                                <p class="text-emerald-400 text-sm font-semibold">${award.issuer}</p>
+                                <p class="text-slate-400 text-sm leading-relaxed">${award.description}</p>
+                            </div>
+                            
+                            ${hasLink ? `
+                                <div class="pt-2">
+                                    <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 group-hover:translate-x-1 transition-transform">
+                                        Lihat Detail Sertifikat <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                                    </span>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </${wrapperTag}>
+                `;
+            });
+
+            // 5. Render Contact & Socials
+            document.getElementById('contact-email').href = `mailto:${portfolioData.contact.email}`;
+            const socialContainer = document.getElementById('socials-container');
+            portfolioData.contact.socials.forEach(soc => {
+                socialContainer.innerHTML += `
+                    <a href="${soc.url}" target="_blank" title="${soc.name}" class="p-3.5 glass-card rounded-xl text-slate-300 hover:text-emerald-400 hover:scale-105 transition-all">
+                        <i data-lucide="${soc.icon}" class="w-5 h-5"></i>
+                    </a>
+                `;
+            });
+
+            // Re-initialize Icons secara aman
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>
